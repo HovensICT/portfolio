@@ -1,5 +1,5 @@
-$primary-color: #444;
-$secondary-color: #eece1a;
+$primary-colour: #444;
+$secondary-colour: #eece1a;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
 $background-opacity: 0.9;
@@ -19,7 +19,7 @@ $background-opacity: 0.9;
         width: 100%;
         height: 100%;
         z-index: -1;
-        background: rgba($primary-color, $background-opacity);
+        background: rgba($primary-colour, $background-opacity);
       }
     }
   }
@@ -27,6 +27,14 @@ $background-opacity: 0.9;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
+}
+
+@function set-text-colour($colour) {
+  @if (lightness($colour) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
 }
 
 // Responsive Mixins
