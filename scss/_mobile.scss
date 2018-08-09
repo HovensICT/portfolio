@@ -10,6 +10,10 @@
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .boxes {
+    grid-template-columns: 1fr;
+  }
 }
 
 // Tablets & kleine laptops
@@ -63,6 +67,10 @@
 
   .projects {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .boxes {
+    grid-template-columns: 1fr;
   }
 }
 
